@@ -33,22 +33,22 @@ gem 'jquery-rails'
 
 # Deploy with Capistrano
 # gem 'capistrano'
-# group :development do
-#   gem 'sqlite3'
-#   gem 'rspec-rails', '2.6.1', require => 'rspec-rails'
-#   # gem 'annotate', '2.4.0'
-#   gem 'faker', '0.3.1'
-#   # gem 'test-unit'
-# end
+group :development do
+  gem 'sqlite3'
+  gem 'rspec-rails' #, '2.6.1', :require => 'rspec-rails', true
+  # gem 'annotate', '2.4.0'
+  gem 'faker', '0.3.1'
+  # gem 'test-unit'
+end
 
-# group :test do
-#   gem 'sqlite3'
-#   gem 'rspec-rails', '2.6.1', require => 'rspec-rails'
-#   # gem 'test-unit'
-#   gem 'webrat', '0.7.1'
-#   gem 'factory_girl_rails', '1.0'
-#   gem 'turn', :require => false
-# end
+group :test do
+  gem 'sqlite3'
+  gem 'rspec-rails' #, '2.6.1', :require => 'rspec-rails' true
+  # gem 'test-unit'
+  gem 'webrat', '0.7.1'
+  gem 'factory_girl_rails', '1.0'
+  gem 'turn', :require => false
+end
 
 group :production do
     gem 'pg'
